@@ -66,7 +66,7 @@ spec:
               name: app-secret
               key: DB_PASSWORD
 ```
-## 2-b. Deploy to Development environment:
+## 2-b. Deploy to production environment:
 ```
 sed -e 's/PLACEHOLDER_NAMESPACE/production/' \
     -e 's/replicas: .*$/replicas: 3/' app-deployment-template.yaml > prod-deployment.yaml
